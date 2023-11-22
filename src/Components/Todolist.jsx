@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Edit from './icons/edit'
+import { Edit } from './icons/Edit'
 import { Save } from './icons/Save'
 import { Delete } from './icons/Delete'
 
@@ -52,9 +52,6 @@ export const Todolist = (props) => {
             onClick={props.onSave}
             className='text-red-950 shadow-sm
           shadow-black rounded-full w-5 h-5 flex items-center  hover:bg-red-900 hover:text-gray-200'><Save /></button>}
-
-
-
 
       </div>
 

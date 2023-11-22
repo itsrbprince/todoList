@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react'
+import React, { useState, useRef } from 'react'
 import { Todolist } from './Todolist'
 
 export const Home = () => {
@@ -32,15 +32,14 @@ export const Home = () => {
   }
 
   const editHandler = () => {
-    console.log(editTodo);
     var editText = editTodo
-    console.log("edit", editText)
+  
     props.updateValue(editText)
   }
 
 
   const deleteItem = (id) => {
-    console.log("delete")
+    // console.log("delete")
     setList((oldItems) => {
       return oldItems.filter((arrEle, index) => {
         return index !== id;
@@ -48,12 +47,6 @@ export const Home = () => {
       })
     })
   }
-
-
-  useEffect(() => {
-    console.log({ ...newVal });
-  },)
-
 
   const addTodos = (e) => {
     e.preventDefault();
