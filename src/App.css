@@ -4,12 +4,29 @@
 
 #root {
   text-align: center;
+  height: 100%;
+  width: 100%;
+}
+::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 10px;
 }
 
-::-webkit-scrollbar {
-  /* Customize the scrollbar width */
-  width:10px;
-  color:red;
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
 }
 
 

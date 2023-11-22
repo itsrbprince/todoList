@@ -33,7 +33,7 @@ export const Home = () => {
 
   const editHandler = () => {
     var editText = editTodo
-  
+
     props.updateValue(editText)
   }
 
@@ -56,9 +56,9 @@ export const Home = () => {
     inputRef.current.todo.value = ""
   }
   return (
-    <div className='pt-20 lg:ml-32 max-md:ml-4 max-sm:ml-0'>
+    <div className='pt-20 md:ml-32 max-md:ml-4 max-sm:ml-0'>
       <form onSubmit={addTodos} ref={inputRef}>
-        <div className='max-w-sm h-32 lg:ml-96 bg-slate-200 rounded-t-3xl shadow-2xl shadow-black'>
+        <div className='max-w-sm h-32 md:ml-96 bg-slate-200 rounded-t-xl shadow-2xl shadow-black'>
           <h1 className='text-red-900 text-xl font-extrabold pt-4 shadow-2xl shadow-gray roun rounded-t-3xl drop-shadow-[2px_2px_var(--tw-shadow-color)]'>TO DO LIST</h1>
           <div className='pt-9'>
             <input type="text" placeholder="Add a task..."
@@ -72,7 +72,7 @@ export const Home = () => {
         </div>
 
       </form>
-      <div className='pl-8 lg:ml-96 flex justify-start max-w-sm h-96 pt-12 bg-gray-300 shadow-2xl shadow-black overflow-y-auto sc rounded-b-3xl'>
+      <div className='pl-8 md:ml-96 flex justify-start max-w-sm h-96 pt-12 bg-gray-300 shadow-2xl shadow-black overflow-y-auto rounded-b-xl'>
 
         <ol>
           {items.map((val, index) => {
